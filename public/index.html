@@ -103,6 +103,7 @@ input, select {
         </style>
     </header>
     <body>
+   <div id='flash-notification'></div>
         <div class = 'firstcompnent'>
         <div class = 'atop'>
             <div class = 'logo'>
@@ -111,7 +112,6 @@ input, select {
                     <ul class='menu'>
                         <li><a href='index.html'>Home</a></li>
                         <li><a href = 'about.html'>About</a></li>
-                        <li><a href = 'contact.hml'>Contact</a></li>
                         <li><a href = 'werehiring.html'>We're hiring!</a></li>
                     </ul>
                 </div>
@@ -137,23 +137,50 @@ input, select {
             <div class="input">
                 <form = action='/' method="post">
                 <input class='email' type="email" placeholder ="Email"></input>
-                <input type="submit" class="send" placeholder='f'name = 'submit'> 
+               <input type="submit" class="send" value="Send" name="submit">
                 </form>
                 <script type="text/javascript" src ='./js/build.js'></script>
             </div>
             
         </div>
-
+        
     </body>
 
 </html>
 <style type="text/css">
+#flash-notification{
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 4px;
+}
+footer ul {
+
+    width: 90%;
+    list-style: none;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 7%;
+}
+footer ul li{
+    display: inline;
+    padding-right: 70;
+    font-family:calibri;
+    font-size: 11;on
+    color: black ;
+}
+
 .input{
     width: 90%;
     position: relative;
     left: 5%;
     top: -20%;
-    height: 20;
+    height: 50;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -167,6 +194,7 @@ input, select {
     margin: 10;
 
 }
+
 .send{
     height: 35;
     width:200;
@@ -185,7 +213,7 @@ input, select {
 }
 .atop{
     width: 90%;
-    height: 50;
+    height: 40;
     position: relative;
     left: 5%;
     border-bottom: solid;
@@ -205,7 +233,7 @@ input, select {
      display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 60vh;
 
 }
 .menu{
@@ -271,5 +299,318 @@ display: flex;
     border-color: #92d0b9;
     position: fixed;
 }
+/* CSS for desktop screens */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+@font-face {
+  font-family: "invisible ExtBd";
+  src: url("Invisible-ExtraBold.otf");
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* Styles for desktop screens */
+
+#flash-notification {
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 4px;
+}
+
+footer ul {
+    width: 90%;
+    list-style: none;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 7%;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 70;
+    font-family: calibri;
+    font-size: 11;
+    color: black;
+}
+
+.input {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: -20%;
+    height: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    width: 300;
+    height: 35;
+    border: none;
+    border-bottom: solid;
+    border-width: 1.5;
+    margin: 10;
+}
+
+.send {
+    height: 35;
+    width: 200;
+    border-color: black;
+    background-color: #319490;
+    font-family: calibri;
+    color: white;
+    font-size: 18;
+    border-radius: ;
+}
+
+.below {
+    width: auto;
+    height: 500;
+    background-color: white;
+}
+
+.atop {
+    width: 90%;
+    height: 50;
+    position: relative;
+    left: 5%;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #92d0b9;
+    position: fixed;
+}
+
+.imglogo {
+    width: 400;
+    position: relative;
+    position: relative;
+    top: -40;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.menu {
+    display: inline;
+    width: 90%;
+    position: fixed;
+    top: 20;
+    list-style: none;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    left: 4%;
+    right: 5%;
+}
+
+.menu li {
+    display: inline;
+    padding
+}
+/* Styles for desktop screens */
+
+/* Existing styles */
+
+/* Styles for tablet screens */
+@media (max-width: 768px) {
+    .atop,
+    .menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    
+    .logo,
+    .below,
+    .title1,
+    .input {
+        width: 90%;
+        left: 5%;
+    }
+    
+    .imglogo {
+        width: 100%;
+        top: -20px;
+    }
+    
+    .menu li {
+        padding-left: 20px;
+    }
+    
+    .title1 {
+        top: -150px;
+    }
+    
+    .below {
+        height: auto;
+    }
+    
+    .footer ul {
+        width: 100%;
+        left: 0;
+    }
+    
+    .email {
+        width: 100%;
+    }
+    
+    .send {
+        width: 100%;
+    }
+}
+
+/* Styles for mobile screens */
+@media (max-width: 480px) {
+    /* Adjust styles as needed for smaller screens */
+}
+#flash-notification {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.flash-message {
+  background-color: #d9534f; /* Red for error message, #319490 for success message */
+  padding: 10px;
+  color: white;
+  height: 60;
+  text-align: center;
+  position: absolute;
+  top: 500;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-family: calibri;
+  font-size: 16px;
+  opacity: 0.8;
+  z-index: 9999999999999999999999999; /* Higher z-index value */
+}
+
+.flash-success {
+  background-color: #319490; /* Green for success message */
+}
+
+.flash-message span {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.flash-message::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #d9534f transparent; /* Triangle arrow color for error message, transparent transparent #319490 transparent for success message */
+}
+
+.flash-message.flash-success::after {
+  border-color: transparent transparent #319490 transparent;
+}
+
 
 </style>
